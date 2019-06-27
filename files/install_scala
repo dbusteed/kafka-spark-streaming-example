@@ -1,0 +1,13 @@
+download binaries from https://www.scala-lang.org/download/
+
+sudo mv scala-2.13.0/ /usr/local/scala
+
+add to /bin to PATH
+
+export HIVE_HOME=/home/davis/hive                                                                                       
+export PATH=$PATH:/home/davis/hive/bin                                                                                  
+                                                                                                                        
+export PATH=$PATH:/usr/local/scala/bin                                                                                  
+export PATH=$PATH:/usr/local/spark/bin                                                                                  
+                                                                                                                        
+export PYSPARK_PYTHON=python3 

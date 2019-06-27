@@ -1,0 +1,6 @@
+sudo apt-get install openssh-server openssh-client 
+
+ssh-keygen -t rsa
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+
+test with `ssh localhost`

@@ -1,0 +1,33 @@
+
+
+https://www.rittmanmead.com/blog/2017/01/getting-started-with-spark-streaming-with-python-and-kafka/
+
+https://medium.com/@kass09/spark-streaming-kafka-in-python-a-test-on-local-machine-edd47814746
+
+
+download spark-streaming-kafka-0-8-assembly_2.11-2.4.3.jar
+
+https://stackoverflow.com/questions/40254319/how-to-run-external-jar-functions-in-spark-shell
+
+pip install pyspark
+
+export PYSPARK_PYTHON=python3
+
+
+
+structured stremaing?
+
+https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html
+http://spark.apache.org/docs/latest/structured-streaming-programming-guide.html
+
+put jars in pyspark/site-packages
+
+df = rdd.map(lambda x: (x, )).toDF()
+
+move hive/conf/hive-site to spark/conf?
+
+make sure jars are 664
+https://acadgild.com/blog/how-to-access-hive-tables-to-spark-sql
+hive --service metastore
+
+spark = SparkSession.builder.appName("asdf").config("spark.sql.warehouse.dir", "/user/hive/warehouse").config("hive.metastore.uris", "thrift://localhost:9083").enableHiveSupport().getOrCreate() 
