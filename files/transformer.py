@@ -24,7 +24,7 @@ ss = SparkSession.builder \
                                                                                                                         
 ss.sparkContext.setLogLevel('WARN')                                                                                     
                                                                                                                         
-ks = KafkaUtils.createDirectStream(ssc, ['messages'], {'metadata.broker.list': 'localhost:9092'})                       
+ks = KafkaUtils.createDirectStream(ssc, ['tweets'], {'metadata.broker.list': 'localhost:9092'})                       
                                                                                                                         
 lines = ks.map(lambda x: x[1])                                                                                          
                                                                                                                         

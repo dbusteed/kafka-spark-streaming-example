@@ -31,6 +31,7 @@ class Streamer(tweepy.StreamListener):
 
         print(f'[{d.hour}:{d.minute}.{d.second}] sending tweet')
 
+# put your API keys here
 consumer_key = conf.consumer_key
 consumer_secret_key = conf.consumer_secret_key
 
@@ -49,6 +50,6 @@ try:
     producer = KafkaProducer(bootstrap_servers=KAFKA_BROKER)
 except Exception as e:
     print(f'Error Connecting to Kafka --> {e}')
-    sys.exit(0)
+    sys.exit(1)
 
 stream.filter(track=TWEET_TOPICS)

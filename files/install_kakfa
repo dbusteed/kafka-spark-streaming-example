@@ -1,4 +1,0 @@
-wget http://apache.claz.org/kafka/2.2.0/kafka_2.12-2.2.0.tgz 
-tar -xvf this
-
-pip3 install kakfa-python
