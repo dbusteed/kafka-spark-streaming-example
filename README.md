@@ -1,5 +1,7 @@
 # Kafka + Spark Streaming Example
 
+### Watch the video [here](https://www.youtube.com/watch?v=9D7-BZnPiTY)
+
 This is an example of building a Proof-of-concept for Kafka + Spark streaming from scratch. This is meant to be a resource for video tutorial I made, so it won't go into extreme detail on certain steps. It can still be used as a follow-along tutorial if you like.
 
 Also, this isn't meant to explain the design of Kafka/Hadoop, instead it's an actual hands-on example. I'd recommend learning the basics of these technologies before jumping in.
